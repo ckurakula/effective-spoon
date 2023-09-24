@@ -1,0 +1,53 @@
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <chrono>
+#include <thread>
+#include <cmath>
+using namespace std;
+string name1 = "Hello";
+string name2 = "Hello";
+string name3 = "Hello";
+string action1 = "Hello";
+string action2 = "Hello";
+string action3 = "Hello";
+string place1 = "Hello";
+string place2 = "Hello";
+string item1 = "Hello";
+string item2 = "Hello";
+void prog1();
+int main(int argc, const char * argv[]) {
+
+    cout<<"Welcome to the MadLibs Clone."<<endl;
+    prog1();
+    time_t now = time(0);
+       char* dt = ctime(&now);
+    cout<<dt<<endl;
+    return 0;
+}
+void prog1(){
+    time_t now = time(0);
+    char* dt = ctime(&now);
+    cout<<"!!! THE CODE IS NOT REPEATING !!!"<<endl;
+    cout<<"Please entre a name: (1/11)"<<endl;
+    getline(cin, name1);
+    cout<<"Please entre a name: (2/11)"<<endl;
+    getline(cin, name2);
+    cout<<"Please entre a name: (3/11)"<<endl;
+    getline(cin, name3);
+    cout<<"Please entre a action: (4/11)"<<endl;
+    getline(cin, action1);
+    cout<<"Please entre a action: (5/11)"<<endl;
+    getline(cin, action2);
+    cout<<"Please entre a action: (6/11)"<<endl;
+    getline(cin, action3);
+    cout<<"Please entre a place: (7/11)"<<endl;
+    getline(cin, place1);
+    cout<<"Please entre a place: (8/11)"<<endl;
+    getline(cin, place2);
+    cout<<"Please entre a item: (9/11)"<<endl;
+    getline(cin, item1);
+    cout<<"Please entre a item: (10/11)"<<endl;
+    getline(cin, item2);
+    cout<<"In the beautiful day of "<<dt<<"there was a man, by the name of "<<name1<<" he was a elegant person. He lived with "<<name2<<" who was quite stupid. "<<name2<<" nurtured by "<<name3<<" who was regarded as one of the stupidest people alive. Eventually when, the 3, "<<name1<<" "<<name2<<" "<<name3<<""<<" went to "<<place1<<" to "<<action1<<" they eventually got kicked out by the staff. For "<<action2<<" . Needless to say they are interesting. So later after the whole fiasco, they went to "<<place2<<" they something equally interesting. They "<<action3<<" everywhere and stole "<<item1<<" and a "<<item2<<" while "<<action2<<". So at the end of they day, they really wanted to meet Spongebob. So they exploded themselves to "<<place1<<" where they have previously been kicked out. And they all died ."<<endl;
+}
